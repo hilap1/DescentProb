@@ -4,5 +4,5 @@ class DieFace:
         self.surge = surge
         self.hearts = hearts
 
-    def to_string(self):
+    def __str__(self):
         return 'range: ' + str(self.range) + ', surge: ' + str(self.surge) + ', hearts: ' + str(self.hearts)

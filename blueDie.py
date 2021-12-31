@@ -2,6 +2,7 @@ import die_face
 
 
 class BlueDie:
+    faces = []
 
     def __init__(self):
         f1 = die_face.DieFace(0, 0, 0)
@@ -12,6 +13,8 @@ class BlueDie:
         f6 = die_face.DieFace(6, 1, 1)
         self.faces = [f1, f2, f3, f4, f5, f6]
 
-    def to_string(self):
+    def __str__(self):
+        res = ''
         for f in self.faces:
-          print(f.to_string())
+            res = res + str(f) + "\n"
+        return res
